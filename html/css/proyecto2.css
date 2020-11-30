@@ -1,0 +1,31 @@
+.main-nav 
+{
+margin-top: 10px;
+list-style: none;
+padding: 10px;
+background-color: goldenrod;
+}
+.main-nav__item
+{
+display: inline-block;
+}
+.main-nav__item a
+{
+    color: white;
+    padding: 5px;
+    border-radius: 2px;
+    text-decoration: none;
+    background-color: black;
+}
+.main-nav__item a:hover
+{
+    color: gold;
+}
+.main-nav__item a:active
+{
+    color: greenyellow;
+}
+.main-nav__item a::after
+{
+    content: " | ";
+}

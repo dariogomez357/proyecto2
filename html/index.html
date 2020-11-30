@@ -6,77 +6,79 @@
         <meta name="robots" content="index,follow">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Primera pagina front-end</title>
-        <link rel="stylesheet" href="./css/proyecto2.css"/>
+        <link rel="stylesheet" href="css/proyecto2.css">
     </head>
     <body>
         <header>
-               <h1>Listas con links</h1> 
+                <nav>
+                    <ul class="main-nav">
+                        <li class="main-nav__item"><a href="">Profesional</a></li>
+                        <li class="main-nav__item"><a href="">Personal</a></li>
+                        <li class="main-nav__item"><a href="">Deportes</a></li>
+                    </ul>
+                    <h1 class="prueba">Proyecto De Vida</h1>
+                </nav>
+                 
         </header>
         <main>
                 <section>
                     <figure>
                             <img src="./Imagenes/grande.jpg" alt="Imagen de prueba tamaño grande">
-                            <figcaption>Esta es una imagen pesada y grande</figcaption>
+                            <figcaption>Con el objetivo en la frente.</figcaption>
                     </figure>
                 </section>
                 <section>
                         <video src="video playa corto mp4.mp4#t=5,10" controls preload="auto"></video>
                  </section>
+                 <h1>¡Cuentanos sobre ti!</h1>
                  <form action="">
 
                         <label for="nombre">
                             <span>¿Cual es tu nombre?</span>
-                            <input type="text" id="nombre" placeholder="Tu nombre">
+                            <input type="text"  name="nombre" id="nombre" placeholder="Tu nombre" autocomplete="name" required>
                         </label>
                         <label for="fecha-nacimiento">
                             <span>¿Cual es tu fecha de nacimiento?</span>
-                            <input type="date" id="fecha-nacimiento">
+                            <input type="date" name="fecha-nacimiento" id="fecha-nacimiento" required>
                         </label>
                         <label for="horas-practica">
                             <span>¿Cuantas horas practicas en el día?</span>
-                            <input type="time" id="horas-practica">
+                            <input type="time" name="horas-practica" id="horas-practica">
                         </label>
+                        <br>
+                        <label for="correo">
+                            <span>¿Cual es tu correo?</span>
+                            <input type="email" name="correo" id="correo" autocomplete="email" required>
+                        </label>
+                        <input type="submit">
                  </form>
                  <form action="">
-                        <!-- <label for="hora">
-                            <span>Hora</span>
-                            <input type="time" id="hora" name="hora">
-                        </label>
-
-                        <label for="dia">
-                            <span>Día</span>
-                            <input type="date" id="dia" name="dia">
-                        </label>
-                 
-                        <label for="semana">
-                            <span>Semana</span>
-                            <input type="week" id="semana" name="semana">
-                        </label>
-                 
-                        <label for="mes">
-                            <span>Mes</span>
-                            <input type="month" id="mes" name="mes">
-                        </label>
-                        <input type="submit"> -->
                         <br>
                         <label for="calendario">
-                            <span>Calendario unificado</span>
+                            <span>Cuando inicias tu reto:</span>
                             <input type="datetime-local" id="calendario" name="calendario">
                             <input type="submit">
                         </label>
                  </form>
+                 <br>
+                 <span>Que te interesa practicar:</span>
+                 <input list="tipoentrenamiento">
+                        <datalist id="tipoentrenamiento">
+                            <option value="Trabajo de fuerza"></option>
+                            <option value="Full Body"></option>
+                            <option value="Cardio"></option>
+                        </datalist>
+                        <button type="submit" >Cuentanos</button>
                 <ol>
                         <li><a href="https://htmlcolorcodes.com/es/"target="_blank"> Lista de colores 	&#128513;</a></li>
                         <li>Item 2 lista ordenada</li>
                 </ol>
-                <ul>
-                        <li>Item 1 lista desordenada</li>
-                        <li>Item 2 lista desordenada</li>
-                </ul>
+                
         </main>
         <footer></footer>   
-        <p>Este seria un parrafo</p>
-        <h1>Este seria un titulo</h1> 
+        <h3>TODO RETO TIENE SU SACRIFICIO Y SU RESULTADO.</h3> 
     </body>
 
 </html>
+
+
