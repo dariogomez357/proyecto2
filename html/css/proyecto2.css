@@ -1,13 +1,20 @@
+*
+{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
 .main-nav 
 {
-margin-top: 10px;
+margin-top: 20px;
 list-style: none;
 padding: 10px;
 background-color: goldenrod;
 }
 .main-nav__item
 {
-display: inline-block;
+   
+    display: inline-block;
 }
 .main-nav__item a
 {
@@ -25,7 +32,14 @@ display: inline-block;
 {
     color: greenyellow;
 }
-.main-nav__item a::after
+/* .main-nav__item a::after
 {
     content: " | ";
+} */
+#titulo1
+{
+    width: 100%;
+    height: 50px;
+    border: 2px solid goldenrod;
+    padding: 10px 10px;
 }
